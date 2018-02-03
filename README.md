@@ -14,6 +14,11 @@ If you want to run the server with persistence
 ```
 nohup python clanserver.py &
 ```
+
+## Troubleshooting
+
+Open up port 3000 in your inbound security rules within the Amazon EC2 security groups console.
+
 ## History
 
 Original version written in Java.  
