@@ -17,4 +17,4 @@ nohup python clanserver.py &
 
 ## Credits
 
-[a link](https://github.com/sswang923)
+[sswang923](https://github.com/sswang923)
