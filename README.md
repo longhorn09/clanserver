@@ -14,3 +14,7 @@ If you want to run the server with persistence
 ```
 nohup python clanserver.py &
 ```
+
+## Credits
+
+[a link](https://github.com/sswang923)
