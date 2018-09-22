@@ -8,8 +8,8 @@ import gevent
 import gevent.queue
 import sys
 import string
-ret = urllib2.urlopen('https://enabledns.com/ip')
-IP = ret.read()
+#ret = urllib2.urlopen('https://enabledns.com/ip')
+IP = ""#ret.read()
 print IP
 current_arctic_chars = {}
 
