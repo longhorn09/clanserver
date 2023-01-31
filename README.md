@@ -19,6 +19,10 @@ nohup python clanserver.py &
 
 Open up port 3000 in your inbound security rules within the Amazon EC2 security groups console.
 
+```
+sudo ufw allow 3000/tcp
+```
+
 ## History
 
 Original version written in Java.  
