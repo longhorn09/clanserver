@@ -121,7 +121,7 @@ def handle_new_client(socket, address):
     print('New connection from %s', address)
     arcticChar = ArcticChar(socket, address)
 
-    socket.sendall(str(ArcticMessage("NOTIFY", "Welcome to FourSkulls.org(" +
+    socket.sendall(str(ArcticMessage("NOTIFY", "Welcome to normstorm.com(" +
         IP + ")")))
     socket.sendall(str(ArcticMessage("NOTIFY", "Current Chars connected are(" +
          ",".join(current_arctic_chars.keys()) + ")")))
