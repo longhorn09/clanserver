@@ -3,14 +3,14 @@ from gevent.server import StreamServer
 import xml.etree.ElementTree as ET
 import socket
 import xmltodict
-import urllib2
+import urllib3
 import gevent
 import gevent.queue
 import sys
 import string
 #ret = urllib2.urlopen('https://enabledns.com/ip')
 IP = ""#ret.read()
-print IP
+print(IP)
 current_arctic_chars = {}
 
 class ArcticMessage():
@@ -107,11 +107,11 @@ def parse_message(client_message):
         try:
             payload = tree.find('payload')
         except:
-            print "No payload found"
+            print( "No payload found")
         print("COMMAND: %s Payload: %s "% (cmd, ET.tostring(payload)))
         return cmd, payload
-    except IOError, e:
-        print "Unexpected error:", sys.exc_info()[0]
+    except (IOError, e):
+        print( "Unexpected error:", sys.exc_info()[0])
         return "NOOP", None
 
 # this handler will be run for each incoming connection in a dedicated greenlet
