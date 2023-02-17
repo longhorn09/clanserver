@@ -2,17 +2,17 @@
 
 ## Setup instructions 
 ```
-sudo apt-get install python-pip python-dev build-essential
+sudo apt-get install python3-pip python3-dev build-essential
 sudo pip install --upgrade pip
 sudo pip install gevent
 sudo pip install xmltodict
-python clanserver.py
+python3 clanserver.py
 ```
 
 
 If you want to run the server with persistence
 ```
-nohup python clanserver.py &
+nohup python3 clanserver.py &
 ```
 
 ## Troubleshooting
